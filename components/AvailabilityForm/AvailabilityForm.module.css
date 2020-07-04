@@ -1,0 +1,27 @@
+.Form button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 200px;
+  border: 1px solid blue;
+  cursor: pointer;
+  outline: none;
+}
+
+.Form button:disabled {
+  background-color: #91b4ff;
+  border: 1px solid #6682ff;
+  color: #ccc;
+  cursor: default;
+}
+
+.Form button:hover:disabled {
+  background-color: #91b4ff;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.Form label {
+  display: block;
+}
