@@ -18,6 +18,9 @@ class Modal extends Component {
             transform: this.props.show ? 'translateY(0)' : 'translateY(-100vh)',
             opacity: this.props.show ? '1' : '0'
           }}>
+          <div className={classes.header}>
+            <a onClick={this.props.modalClosed}>Close</a>
+          </div>
           {this.props.children}
         </div>
       </Aux>

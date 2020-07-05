@@ -28,7 +28,7 @@ export default function Home(props) {
         <AvailabilityForm stores={props.stores} countries={props.countries}></AvailabilityForm>
 
         {data && data.data && (
-          <DataVisualizer />
+          <DataVisualizer stores={props.stores} countries={props.countries} />
         )}
 
       </section>

@@ -16,11 +16,15 @@ const AvailabilityForm = (props) => {
 
   const dataContext = useContext(DataContext)
 
-  const updateFormData = event =>
+  const updateFormData = event => {
+    // clear old data
+    dataContext.setData({ data: null })
+    
     setFormData({
       ...formData,
       [event.target.name]: event.target.value
     });
+  }
 
   const { country, stores, product } = formData;
 
