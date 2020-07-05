@@ -1,8 +1,26 @@
+.Form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.From label {
+  margin-top: 15px;
+}
+
+.Form input,
+.Form select {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+}
+
 .Form button {
   display: block;
   font: inherit;
   padding: 5px;
-  margin: 0 5px;
+  margin: 20px 5px 0 5px;
   width: 200px;
   border: 1px solid blue;
   cursor: pointer;

@@ -4,8 +4,13 @@ import utilStyles from '../styles/utils.module.css'
 import AvailabilityForm from '../components/AvailabilityForm/AvailabilityForm'
 import countries from '../data/countries.json'
 import stores from '../data/stores.json'
+import { useContext } from 'react'
+import { DataContext } from '../components/data.context'
+import DataVisualizer from '../components/DataVisualizer/DataVisualizer'
 
 export default function Home(props) {
+  const { data } = useContext(DataContext)
+
   return (
     <Layout home>
       <Head>
@@ -21,6 +26,11 @@ export default function Home(props) {
         </p>
 
         <AvailabilityForm stores={props.stores} countries={props.countries}></AvailabilityForm>
+
+        {data && data.data && (
+          <DataVisualizer />
+        )}
+
       </section>
 
       <style jsx>{`

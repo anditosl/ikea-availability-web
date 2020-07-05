@@ -1,0 +1,21 @@
+.DataVisualizer {
+  background-color: lightgray;
+  color: blue;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 150px;
+  margin: 15px auto 0 auto;
+  padding: 5px;
+}
+
+.DataVisualizer .label {
+  font-size: 1em;
+}
+
+.DataVisualizer .AvailableNow {
+  font-size: 6rem;
+}
