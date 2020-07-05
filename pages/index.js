@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../hoc/Layout/layout'
+import Layout, { siteTitle } from '../hoc/Layout/Layout'
 import utilStyles from '../styles/utils.module.css'
 import AvailabilityForm from '../components/AvailabilityForm/AvailabilityForm'
 import countries from '../data/countries.json'
